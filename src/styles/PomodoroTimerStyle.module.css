@@ -1,0 +1,147 @@
+.pomodoro-container{
+    background-color: #D9D9D9;
+    padding: 20px;
+    width: 90%;
+    height: fit-content;
+    max-height: 1000px;
+    margin: none;
+    max-width: 1950px;
+    height: fit-content;
+    display: grid;
+    grid-template-areas:
+        "clock",
+        "button-organization";
+    justify-content: center;
+    align-content: center;
+}
+.clock{
+    background-color: white;
+    border-radius: 20vw;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 10vw;
+    margin: none;
+}
+.clock span{
+    transition: opacity 2s ease;
+}
+.clock-series-div{
+    display: flex;
+    justify-content: right;
+    margin:none;
+    padding: none;
+}
+.clock-series{
+    background-color: white;
+    border-radius: 20vw;
+    padding: 15px;
+    font-size: 3vw;
+    margin: none;
+    width: fit-content;
+}
+/*BUTTON SETTINGS*/
+.button-organization{
+    display: flex;
+    justify-content: center;
+    grid-area: "button-organization";
+}
+.button-container{
+    font-size: 4vw;
+    padding: 2vw;
+    margin-left: 2vw;
+    margin-bottom: 4vw;
+    border-style: none;
+    font-family: 'Impact';
+    border-radius: 15vh;
+    width: 15vw;
+
+    transform: translateY(0);
+    transition: all 0.1s ease;
+}
+.button-container:hover{
+    box-shadow: 0 3px 0 #888;
+    transform: translateY(1px);
+}
+
+.button-container:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+/*BUTTONS THEME*/
+.button-theme-default{
+    background-color: grey;
+    box-shadow: 0 5px 0 darkslategrey;
+}
+.button-theme-green{
+    background-color: #4F676B;
+    color:#E0E0E0;
+    box-shadow: 0 5px 0 #435a5e;
+}
+.button-theme-blue{
+    background-color: #6A8DAA  ;
+    color: #F5F5F5;
+    box-shadow:  0 5px 0 #5c7a93;
+}
+.button-theme-brown{
+    background-color: #6C5345;
+    color: #FCF7F3;
+    box-shadow: 0 5px 0 #5c4639;
+}
+/* BUTTON THEME HOVER */
+.button-theme-default:hover{
+    box-shadow: 0 3px 0 darkslategrey;
+}
+.button-theme-green:hover{
+    box-shadow: 0 3px 0 #3b4f53;
+}
+.button-theme-blue:hover{
+    box-shadow: 0 3px 0 #4f697e;
+}
+.button-theme-brown:hover{
+    box-shadow: 0 3px 0 #4a392f;
+}
+/*theme*/
+.theme-default{
+    background-color: #D9D9D9 ;
+}
+.theme-green{
+    background-color: #A2B4AB ;
+}
+.theme-blue{
+    background-color: #B0C4DE ;
+}
+.theme-brown{
+    background-color: #A37B5C ;
+}
+
+/*settings*/
+.setting-div{
+    display: flex;
+    justify-content: right;
+    z-index: 1000;
+    position:absolute;
+    right: 0;
+    margin-right:5% ;
+    padding: 0;
+    align-items: center;
+}
+.setting-button{
+    border: none;
+    background-color: transparent;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    width:4vw;
+    height: auto;
+}
+.setting-button svg{
+    transform-origin: center;
+    transition: 1s ease;
+    width: 1em;
+    height: 1em;
+}
+.setting-button:hover svg{
+    transform:rotate(180deg)
+}

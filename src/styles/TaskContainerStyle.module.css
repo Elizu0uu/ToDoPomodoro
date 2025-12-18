@@ -1,0 +1,89 @@
+.add-task-form{
+    display: flex;
+    align-items: center;
+}
+.add-task-input{
+    padding: 3vw;
+    border-radius: 20vw;
+    width: 25vw;
+    margin: 5vw;
+    color: white;
+    font-size: 2vw;
+}
+.add-task-input:not(:placeholder-shown){
+    background-color: red;
+}
+.add-task-button{
+    border-radius: 20vw;
+    border-style: none;  
+    padding: 0.5em;
+    margin: 5vw;
+    font-family: 'Impact';
+    font-size: 3vw;
+}
+
+/*input theme*/
+.input-theme-default{
+    background-color: lightgrey
+}
+.input-theme-green{
+    background-color: #A2B4AB;
+}
+.input-theme-blue{
+    background-color: #B0C4DE;
+}
+.input-theme-brown{
+    background-color: #A37B5C;
+}
+/*input theme placeholder*/
+.input-theme-default:not(:placeholder-shown){
+    background-color: lightblue;
+}
+.input-theme-green:not(:placeholder-shown){
+    background-color: #6a858a;
+}
+.input-theme-blue:not(:placeholder-shown){
+    background-color: #6A8DAA ;
+}
+.input-theme-brown:not(:placeholder-shown){
+    background-color: #6C5345;
+}
+
+/*list settings*/
+.list-organization{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delete-button{
+    font-size: 4vw;
+    border-style: none;
+    font-family: 'Impact';
+    border-radius: 15vh;
+    width: 5vw;
+
+    transform: translateY(0);
+    transition: all 0.1s ease;
+}
+.delete-button:hover{
+    box-shadow: 0 3px 0 #888;
+    background-color: rgb(170, 34, 34);
+    transform: translateY(1px);
+}
+.delete-button:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.list{
+    padding:5vh;
+}
+.list h1{
+    background-color: white;
+    padding: 2vw;
+    border-radius: 15vh;
+}
+.list-organization span{
+    font-size: 2vw;
+    margin: 2vw;
+}

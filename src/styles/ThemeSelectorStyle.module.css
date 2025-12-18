@@ -1,0 +1,29 @@
+section{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.theme-buttons{
+    margin:1vw;
+    border-radius: 50%;
+    border-style: none;
+    width: 5vw;
+    height: 5vw;
+}
+.theme-button-default{
+    background-color: #D9D9D9 ;
+}
+.theme-button-green{
+    background-color: #A2B4AB ;
+}
+.theme-button-blue{
+    background-color: #6A8DAA  ;
+}
+.theme-button-brown{
+    background-color: #A37B5C ;
+}
+
+.theme-buttons:hover{
+    border-style: double;
+    border-color:black;
+}
